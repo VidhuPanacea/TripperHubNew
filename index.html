@@ -25,7 +25,10 @@
 	<link href="assets/css/lib/fontawesome/css/brands.css" rel="stylesheet">
 	<link href="assets/css/lib/fontawesome/css/solid.css" rel="stylesheet">
 	<link href="assets/css/lib/simple-line-icons/css/simple-line-icons.min.css" rel="stylesheet">
-	<link href="assets/css/lib/flaticon/css/flaticon.min.css" rel="stylesheet">
+	<!-- <link href="assets/css/lib/flaticon/css/flaticon.min.css" rel="stylesheet"> -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+		integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+		crossorigin="anonymous" referrerpolicy="no-referrer" />
 	<link href="assets/css/lib/animate.min.css" rel="stylesheet">
 	<link href="assets/css/lib/slick.min.css" rel="stylesheet">
 	<link href="assets/css/lib/swiper.min.css" rel="stylesheet">
@@ -39,7 +42,7 @@
 <body>
 	<div class="page-wrapper">
 		<!-- Preloader -->
-		<div class="loader-wrap">
+		<!-- <div class="loader-wrap">
 			<div class="preloader">
 				<div class="preloader-close">x</div>
 				<div id="handle-preloader" class="handle-preloader">
@@ -59,7 +62,7 @@
 					</div>
 				</div>
 			</div>
-		</div>
+		</div> -->
 		<!-- Preloader End -->
 
 		<!-- Main Header-->
@@ -75,7 +78,6 @@
 							</ul>
 						</div>
 						<div class="top-right clearfix">
-							<div class="login"><a href="#">Login / Signup</a></div>
 							<!-- <div class="lang-box">
 								<div class="lang-btn clearfix"><span class="txt">En</span><span
 										class="icon far fa-angle-down"></span>
@@ -124,10 +126,10 @@
 											</li>
 											<li class="dropdown"><a href="#">Packages</a>
 												<ul>
-													<li><a href="#">Volvo Packages</a></li>
-													<li><a href="#">Car Packages</a></li>
-													<li><a href="#">Honeymoon Packages</a></li>
-													<li><a href="#">OffBeat Destinations</a></li>
+													<li><a id="volvoLink" href="#">Volvo Packages</a></li>
+													<li><a id="carLink" href="#">Car Packages</a></li>
+													<li><a id="honeymoonLink" href="#">Honeymoon Packages</a></li>
+													<li><a id="offLink" href="#">OffBeat Destinations</a></li>
 												</ul>
 											</li>
 											<!-- <li class="dropdown"><a href="#">Destinations</a>
@@ -171,7 +173,7 @@
 			<!-- End Header Upper -->
 		</header>
 		<!--End Main Header -->
-		
+
 
 		<!--Menu Backdrop-->
 		<div class="menu-backdrop"></div>
@@ -191,14 +193,6 @@
 				<nav class="side-menu">
 					<!-- main-menu will be copied here! -->
 				</nav><!-- .side-menu -->
-
-				<div class="links-box clearfix">
-					<div class="clearfix">
-						<div class="link"><a href="#" class="theme-btn btn-style-one"><span>Login /
-									Signup</span></a></div>
-					</div>
-				</div>
-
 			</div><!-- / Hidden Bar Wrapper -->
 		</div>
 		<!-- / Hidden Bar -->
@@ -374,7 +368,7 @@
 		<!--End Banner Section -->
 
 		<!--Serach One-->
-		<div class="search-one">
+		<div id="searchOne" class="search-one">
 			<div class="auto-container">
 				<div class="tabs-box search-tabs">
 
@@ -456,7 +450,7 @@
 		</div>
 		<!-- Packages Section -->
 
-		<div class="packages-two">
+		<div class="packages-two" id="volvopackages">
 			<div class="bg-layer" style="background-image: url(assets/images/background/pattern-3.jpg);"></div>
 			<div class="auto-container">
 				<div class="tabs-box pkg-tabs">
@@ -637,13 +631,11 @@
 											<h5><a href="Shimla Manali Honeymoon Tour.html">Shimla Manali Honeymoon
 													Tour</a></h5>
 											<p>08 NIGHT / 09 DAYS</p>
-											<div class="bottom-box clearfix">
-												<div class="rating"><a href="#" class="theme-btn"><i
-															class="fa-solid fa-star"></i>
-														<strong>4.5</strong> &ensp;
-														<span class="count">509 Reviews</span></a></div>
-												<div class="price">Start from &ensp;<span class="amount">₹8499</span>
-												</div>
+											<div class=" clearfix justify-content-center">
+												<a style="width: 45%;" class="btn-style-two" href="">Learn More</a>
+												<a style="width: 45%;" class="btn-style-two" href="">Book Now</a>
+
+
 											</div>
 										</div>
 									</div>
@@ -896,9 +888,7 @@
 					</div>
 					<div class="d-elem-1"><img src="assets/images/elements/purple-2.png" alt=""></div>
 					<div class="popular-carousel">
-
-						<!--Block-->
-						<div class="popular-block">
+						<div class="popular-block alternate">
 							<div class="inner-box">
 								<div style="height: 400px !important;" class="image-box">
 									<div class="image"><a href="#"><img
@@ -914,9 +904,7 @@
 								</div>
 							</div>
 						</div>
-
-						<!--Block-->
-						<div class="popular-block alternate">
+						<div class="popular-block ">
 							<div class="inner-box">
 								<div style="height: 400px !important;" class="image-box">
 									<div class="image"><a href="#"><img
@@ -933,6 +921,23 @@
 								</div>
 							</div>
 						</div>
+						<div class="popular-block alternate">
+							<div class="inner-box">
+								<div style="height: 400px !important;" class="image-box">
+									<div class="image"><a href="#"><img
+												src="https://images.unsplash.com/photo-1600491001617-36f4e8005cc1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1936&q=80"
+												alt="Shimla"></a></div>
+								</div>
+								<div class="hvr-box">
+									<div class="hvr-inner">
+										<h3><a href="#">Khajjiar</a></h3>
+										<div class="info"><span>20 Hotels</span> <span>30 Tours</span> <span>15
+												Cars</span></div>
+									</div>
+								</div>
+							</div>
+						</div>
+
 						<div class="popular-block ">
 							<div class="inner-box">
 								<div style="height: 400px !important;" class="image-box">
@@ -950,15 +955,6 @@
 								</div>
 							</div>
 						</div>
-
-						<!--Block-->
-
-						<!--Block-->
-
-
-						<!--Block-->
-
-						<!--Block-->
 						<div class="popular-block alternate">
 							<div class="inner-box">
 								<div style="height: 400px !important;" class="image-box">
@@ -976,8 +972,6 @@
 								</div>
 							</div>
 						</div>
-
-						<!--Block-->
 						<div class="popular-block ">
 							<div class="inner-box">
 								<div style="height: 400px !important;" class="image-box">
@@ -995,21 +989,6 @@
 								</div>
 							</div>
 						</div>
-
-						<!--Block-->
-
-
-						<!--Block-->
-
-
-						<!--Block-->
-
-
-						<!--Block-->
-
-
-						<!--Block-->
-
 					</div>
 				</div>
 			</div>
@@ -1046,7 +1025,7 @@
 										</span></h2>
 									<p class="travilo-text"> Our
 										travel advisor will anticipate your need and provide astonishing
-										exploration.</p>
+										exploration. thankss</p>
 								</div>
 								<div class="features">
 									<div class="f-block-three">
@@ -1479,7 +1458,7 @@
 				<div class="auto-container">
 					<div class="content-box">
 						<div class="row clearfix">
-							<div class="footer-column col-xl-4 col-lg-3 col-md-6 col-sm-12">
+							<div class="footer-column col-xl-6 col-lg-6 col-md-6 col-sm-12">
 								<div class="footer-widget about-widget">
 									<div class="footer-logo"><a href="index.html" title="Travilo"><img width="50%"
 												src="assets/images/tripperHub-white.png" alt="" title="Travilo"></a>
@@ -1528,11 +1507,11 @@
 											<h4>Useful Links</h4>
 											<div class="links">
 												<ul>
-													<li><a href="#">About Us</a></li>
-													<li><a href="#">Packages</a></li>
-													<li><a href="#">Team Members</a></li>
-													<li><a href="#">Support</a></li>
-													<li><a href="#">Contact</a></li>
+													<li id="><a href="#"> Volvo Packages</a></li>
+													<li><a id="carLink" href="#">Car Packages</a></li>
+													<li><a id="honeymoonLink" href="#">Honeymoon Packages</a></li>
+													<li><a id="offLink" href="#">Off-Beat Destinations</a></li>
+
 												</ul>
 											</div>
 										</div>
@@ -1541,10 +1520,10 @@
 								</div>
 							</div>
 
-							<div class="footer-column col-xl-3 col-lg-3 col-md-6 col-sm-12">
+							<!-- <div class="footer-column col-xl-3 col-lg-3 col-md-6 col-sm-12">
 								<div class="footer-widget app-widget">
 									<h4>Download App</h4>
-									<!--Logo-->
+									
 									<div class="app-info">
 										<p class="travilo-text">Download the Tripper Hub app for seamless access to
 											real-time updates, and
@@ -1557,7 +1536,7 @@
 										</div>
 									</div>
 								</div>
-							</div>
+							</div> -->
 
 						</div>
 					</div>
@@ -1582,7 +1561,7 @@
 
 	</div>
 	<!--End pagewrapper-->
-	<div class="offer-ribbon" >
+	<div class="offer-ribbon">
 		<a href="Shimla Honeymoon by Car.html">Flat 40% off**</a>
 	</div>
 	<div class="bottom-menu-mobile">
@@ -1594,7 +1573,16 @@
 	<!-- <div class="scroll-to-top scroll-to-target" data-target="html">
 		<span class="icon"><img src="assets/images/icons/arrow-up.svg" alt="" title="Go To Top"></span>
 	</div> -->
-
+	<script>
+		
+		const volvo = document.getElementById("volvopackages");
+		const car = document.getElementById("volvopackages");
+		const honeymoon = document.getElementById("volvopackages");
+		const offbeat = document.getElementById("volvopackages");
+	
+	
+		document.getElementById("volvoLink").addEventListener("click", (e)=>{e.preventDefault(); volvo.scrollIntoView()})
+	</script>
 	<script src="assets/js/lib/jquery.min.js"></script>
 	<script src="assets/js/lib/popper.min.js"></script>
 	<script src="assets/js/lib/bootstrap/bootstrap.min.js"></script>
@@ -1606,6 +1594,7 @@
 	<script src="assets/js/lib/wow.min.js"></script>
 	<script src="assets/js/lib/swiper.min.js"></script>
 	<script src="assets/js/custom-script.js"></script>
+
 </body>
 
 </html>
