@@ -5712,7 +5712,7 @@ body.visible-sidebar {
 .testi-block-two .rating {
   position: absolute;
   right: 0;
-  top: 10px;
+  top: -30px;
   font-size: 24px;
   color: var(--secondary-color);
 }
