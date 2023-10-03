@@ -4526,7 +4526,7 @@ body.visible-sidebar {
 .search-one {
   position: relative;
   z-index: 15;
- padding-top: 5em;
+  margin-top: -10em;
 }
 
 .search-one .outer {
@@ -4536,7 +4536,7 @@ body.visible-sidebar {
 .search-one .search-title {
   position: absolute;
   left: 0;
-  top: -54px;
+  top: -10em;
   font-family: 'Gilroy_Bold', sans-serif;
   color: var(--dark-gray-gray);
   font-size: 16px;
